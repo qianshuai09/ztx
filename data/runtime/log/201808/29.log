@@ -1,0 +1,2566 @@
+---------------------------------------------------------------
+[ 2018-08-29T01:03:09+08:00 ] 140.205.205.25 HEAD /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.099559s][吞吐率：10.04req/s] [内存消耗：5,348.77kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001505s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '140.205.205.25',
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000383s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000207s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.003216s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.015089s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.003218s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.003109s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.003588s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002136s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.002177s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.001966s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002614s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1535475789 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-08-29T01:19:05+08:00 ] 106.15.76.85 GET /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.085942s][吞吐率：11.64req/s] [内存消耗：5,348.61kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001493s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '106.15.76.85',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000362s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000212s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.005496s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002259s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002132s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.002236s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.002374s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.002110s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002494s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1535476745 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:30:14+08:00 ] 220.248.243.42 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027991s][吞吐率：35.73req/s] [内存消耗：3,866.82kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001666s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000351s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:30:14+08:00 ] 220.248.243.42 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.027087s][吞吐率：36.92req/s] [内存消耗：3,817.79kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001423s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000323s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000131s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:30:14+08:00 ] 220.248.243.42 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.040301s][吞吐率：24.81req/s] [内存消耗：3,837.53kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001506s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000382s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000137s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:30:14+08:00 ] 220.248.243.42 GET /portal/wx/wxData?code=071Dr0sr157Cbo0akftr1lWWrr1Dr0sS
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=071Dr0sr157Cbo0akftr1lWWrr1Dr0sS [运行时间：0.215890s][吞吐率：4.63req/s] [内存消耗：2,365.84kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001667s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071Dr0sr157Cbo0akftr1lWWrr1Dr0sS',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000408s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T08:30:15+08:00 ] 220.248.243.42 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029642s][吞吐率：33.74req/s] [内存消耗：3,815.87kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001696s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000370s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000294s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:31:42+08:00 ] 36.7.87.91 GET /portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028553s][吞吐率：35.02req/s] [内存消耗：3,864.34kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001457s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '3',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000349s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='3') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:31:44+08:00 ] 36.7.87.91 GET /portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027444s][吞吐率：36.44req/s] [内存消耗：3,863.19kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001403s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'userStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000323s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->userStatus[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_join` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_join` WHERE  `juid` = 90 LIMIT 1 [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:34:23+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.031535s][吞吐率：31.71req/s] [内存消耗：3,865.67kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001716s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '2',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000430s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='2') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000559s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:34:24+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028933s][吞吐率：34.56req/s] [内存消耗：3,866.70kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001509s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000350s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:34:25+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.030030s][吞吐率：33.30req/s] [内存消耗：3,865.67kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001563s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '2',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000398s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000474s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='2') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000285s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:34:26+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028282s][吞吐率：35.36req/s] [内存消耗：3,864.43kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001464s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '3',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000368s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='3') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:34:26+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027858s][吞吐率：35.90req/s] [内存消耗：3,866.70kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001496s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000360s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:05+08:00 ] 36.7.136.208 GET /portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027608s][吞吐率：36.22req/s] [内存消耗：3,863.10kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001445s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'userStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000362s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->userStatus[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_join` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_join` WHERE  `juid` = 90 LIMIT 1 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:15+08:00 ] 36.7.136.208 GET /portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028095s][吞吐率：35.59req/s] [内存消耗：3,863.10kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001427s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'userStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000327s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->userStatus[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_join` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_join` WHERE  `juid` = 90 LIMIT 1 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:28+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.032170s][吞吐率：31.08req/s] [内存消耗：3,866.70kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001722s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000396s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:28+08:00 ] 36.7.136.208 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.030782s][吞吐率：32.49req/s] [内存消耗：3,817.79kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002263s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000499s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000146s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:28+08:00 ] 36.7.136.208 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.032355s][吞吐率：30.91req/s] [内存消耗：3,837.73kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001744s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000391s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:28+08:00 ] 36.7.136.208 GET /portal/wx/wxData?code=07196er52tST8L04Ptr52KwBr5296er-
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=07196er52tST8L04Ptr52KwBr5296er- [运行时间：0.211705s][吞吐率：4.72req/s] [内存消耗：2,365.84kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001590s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '07196er52tST8L04Ptr52KwBr5296er-',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000322s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T08:35:28+08:00 ] 36.7.136.208 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027893s][吞吐率：35.85req/s] [内存消耗：3,815.87kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001507s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000358s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:31+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029064s][吞吐率：34.41req/s] [内存消耗：3,865.67kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001492s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '2',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000331s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='2') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:32+08:00 ] 36.7.136.208 GET /portal/wx/detailJob?pid=9&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detailJob?pid=9&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029932s][吞吐率：33.41req/s] [内存消耗：3,858.19kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001549s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detailJob',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '9',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000395s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detailJob[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM  (SELECT * from ztx_station WHERE mcate='9') a LEFT JOIN (select * from ztx_muser WHERE mu_uid='90')b on a.mid = b.mu_mid GROUP BY a.mid [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT a.pid,a.pname,a.pimg,a.pdetail,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='9') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:36+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=3&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028448s][吞吐率：35.15req/s] [内存消耗：3,864.43kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001401s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '3',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000317s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='3') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:37+08:00 ] 36.7.136.208 GET /portal/wx/detail?pid=6&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detail?pid=6&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.043881s][吞吐率：22.79req/s] [内存消耗：3,851.48kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002461s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '6',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000474s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detail[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT a.pid,a.atime,a.alocation,a.abeizhu,a.starttime,a.endtime,a.zanzhu,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='6') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:35:45+08:00 ] 36.7.136.208 GET /portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.027680s][吞吐率：36.13req/s] [内存消耗：3,863.10kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001452s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'userStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000336s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->userStatus[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_join` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_join` WHERE  `juid` = 90 LIMIT 1 [ RunTime:0.000179s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:36:55+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.026777s][吞吐率：37.35req/s] [内存消耗：3,866.70kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001427s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000323s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000267s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:36:55+08:00 ] 36.7.136.208 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.031571s][吞吐率：31.67req/s] [内存消耗：3,837.73kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001662s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000337s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.001401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:36:55+08:00 ] 36.7.136.208 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.026106s][吞吐率：38.31req/s] [内存消耗：3,817.79kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001371s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000314s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000180s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:36:56+08:00 ] 36.7.136.208 GET /portal/wx/wxData?code=021bBNBG1WaVG80wAtFG1vwcCG1bBNBS
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=021bBNBG1WaVG80wAtFG1vwcCG1bBNBS [运行时间：0.230314s][吞吐率：4.34req/s] [内存消耗：2,365.84kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001596s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021bBNBG1WaVG80wAtFG1vwcCG1bBNBS',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000376s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T08:36:56+08:00 ] 36.7.136.208 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029385s][吞吐率：34.03req/s] [内存消耗：3,815.87kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001577s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000350s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:36:59+08:00 ] 36.7.136.208 GET /portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/userStatus?openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.030514s][吞吐率：32.77req/s] [内存消耗：3,863.10kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001628s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'userStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000345s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->userStatus[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_join` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_join` WHERE  `juid` = 90 LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:37:19+08:00 ] 36.7.136.208 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.026304s][吞吐率：38.02req/s] [内存消耗：3,817.79kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001389s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000452s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000292s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:37:19+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.041083s][吞吐率：24.34req/s] [内存消耗：3,866.70kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.015565s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000347s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:37:19+08:00 ] 36.7.136.208 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.031312s][吞吐率：31.94req/s] [内存消耗：3,837.73kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005445s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000331s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:37:23+08:00 ] 36.7.136.208 GET /portal/wx/wxData?code=08189bAE0pYSvc22jMzE0k4rAE089bAp
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=08189bAE0pYSvc22jMzE0k4rAE089bAp [运行时间：0.236775s][吞吐率：4.22req/s] [内存消耗：2,365.84kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001491s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '08189bAE0pYSvc22jMzE0k4rAE089bAp',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000331s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T08:37:23+08:00 ] 36.7.136.208 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.031121s][吞吐率：32.13req/s] [内存消耗：3,815.87kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001659s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000391s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-08-29T08:37:24+08:00 ] 36.7.136.208 GET /portal/wx/detail?pid=7&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detail?pid=7&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.032291s][吞吐率：30.97req/s] [内存消耗：3,848.85kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001460s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/59352d3ab91578ed2d32e2a14f07fed7',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '7',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000344s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detail[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000499s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.002638s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT a.pid,a.atime,a.alocation,a.abeizhu,a.starttime,a.endtime,a.zanzhu,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='7') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000161s ]
+---------------------------------------------------------------
+[ 2018-08-29T09:02:12+08:00 ] 138.246.253.5 HEAD /errpage/400.html
+[ info ] ztx.hfxyzq.cn/errpage/400.html [运行时间：0.019572s][吞吐率：51.09req/s] [内存消耗：2,391.06kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001506s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'errpage',
+    1 => '400',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '138.246.253.5',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000337s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T09:51:56+08:00 ] 60.166.58.227 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020536s][吞吐率：48.70req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001414s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '60.166.58.227',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000352s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T09:55:11+08:00 ] 60.166.58.227 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.019736s][吞吐率：50.67req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001402s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '60.166.58.227',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000340s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T09:55:35+08:00 ] 60.166.58.227 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.019429s][吞吐率：51.47req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001397s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '60.166.58.227',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000354s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:03:28+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020062s][吞吐率：49.85req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001408s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000336s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:07:19+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.022705s][吞吐率：44.04req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001756s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000382s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:09:31+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.022579s][吞吐率：44.29req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001942s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000418s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:18:17+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.021178s][吞吐率：47.22req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001421s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000350s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:18:31+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020621s][吞吐率：48.49req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001469s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000361s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:18:47+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020918s][吞吐率：47.81req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001484s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000384s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:18:58+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020115s][吞吐率：49.71req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001477s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000343s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:34:30+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.022515s][吞吐率：44.41req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001549s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000359s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:41:10+08:00 ] 60.166.58.227 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.021788s][吞吐率：45.90req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001706s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '60.166.58.227',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000414s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:42:02+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020879s][吞吐率：47.89req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001456s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000345s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T10:42:14+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.021531s][吞吐率：46.44req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001597s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000377s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:11:56+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.019620s][吞吐率：50.97req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001405s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000349s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:12:23+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.019578s][吞吐率：51.08req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001390s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000330s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:16:05+08:00 ] 61.191.24.236 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020493s][吞吐率：48.80req/s] [内存消耗：2,575.05kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001489s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '61.191.24.236',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000382s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:17:00+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.022461s][吞吐率：44.52req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001586s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000375s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:28:45+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.021829s][吞吐率：45.81req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001521s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000373s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:28:51+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020177s][吞吐率：49.56req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001502s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000339s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T11:28:58+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.019949s][吞吐率：50.13req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001423s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000359s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T14:00:57+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001401s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000345s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T14:01:26+08:00 ] 117.71.53.46 POST /portal/wx/base64
+[ info ] ztx.hfxyzq.cn/portal/wx/base64 [运行时间：0.020035s][吞吐率：49.91req/s] [内存消耗：2,575.11kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001481s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'base64',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '117.71.53.46',
+  'connection' => 'close',
+  'content-length' => '56',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'wangwu',
+  'men' => 'maliu',
+  'name' => 'v8a089G2t8k=',
+  'age' => 'bGlzaQ==',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000348s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-29T19:39:06+08:00 ] 193.238.46.81 GET /errpage/400.html
+[ info ] ztx.hfxyzq.cn/errpage/400.html [运行时间：0.023456s][吞吐率：42.63req/s] [内存消耗：2,391.21kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001829s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'errpage',
+    1 => '400',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '193.238.46.81',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000426s ]
+[ info ] [ LOG ] INIT File

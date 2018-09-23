@@ -1,0 +1,1281 @@
+---------------------------------------------------------------
+[ 2018-08-16T03:49:45+08:00 ] 64.74.215.1 GET /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.081671s][吞吐率：12.24req/s] [内存消耗：5,349.93kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001579s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '64.74.215.1',
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'en-US',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000376s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000195s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.002808s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.002846s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002126s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.002054s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002091s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.002315s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1534362585 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000146s ]
+---------------------------------------------------------------
+[ 2018-08-16T03:49:48+08:00 ] 64.74.215.1 POST /user/index/islogin.html
+[ info ] ztx.hfxyzq.cn/user/index/islogin.html [运行时间：0.028387s][吞吐率：35.23req/s] [内存消耗：3,796.13kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001416s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://ztx.hfxyzq.cn/',
+  'cookie' => 'PHPSESSID=cupnjrosh05hc0qs8bg63diho5; thinkphp_show_page_trace=0|0',
+  'x-real-ip' => '64.74.215.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000367s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/user/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000238s ]
+[ info ] [ RUN ] app\user\controller\IndexController->isLogin[ /www/web/ztx_hfxyzq_cn/public_html/app/user/controller/IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-08-16T03:56:55+08:00 ] 140.205.205.25 HEAD /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.079199s][吞吐率：12.63req/s] [内存消耗：5,348.73kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001433s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '140.205.205.25',
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000355s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000209s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.002933s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002159s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002055s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.002095s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002035s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.001923s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.002117s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002656s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1534363015 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.030282s][吞吐率：33.02req/s] [内存消耗：3,794.90kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001629s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000386s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.030123s][吞吐率：33.20req/s] [内存消耗：3,819.27kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001461s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000380s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.046447s][吞吐率：21.53req/s] [内存消耗：3,775.34kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001603s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000355s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /portal/wx/wxData?code=061aMxFU1CNiYW049GFU1eJIFU1aMxFk
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=061aMxFU1CNiYW049GFU1eJIFU1aMxFk [运行时间：0.230982s][吞吐率：4.33req/s] [内存消耗：2,323.16kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001550s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061aMxFU1CNiYW049GFU1eJIFU1aMxFk',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000401s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.026532s][吞吐率：37.69req/s] [内存消耗：3,769.70kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001493s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000339s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:22+08:00 ] 36.7.136.208 GET /upload/%E5%95%8A%E5%95%8A%E5%95%8A%E5%95%8A
+[ info ] ztx.hfxyzq.cn/upload/%E5%95%8A%E5%95%8A%E5%95%8A%E5%95%8A [运行时间：0.020686s][吞吐率：48.34req/s] [内存消耗：2,393.70kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001578s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => '啊啊啊啊',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/0 port/36089 token/1994fab4b580936278f4e29cde103792',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000338s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T11:15:24+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=2&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029339s][吞吐率：34.08req/s] [内存消耗：3,816.39kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001485s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '2',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000349s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='2') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:15:24+08:00 ] 36.7.136.208 GET /upload/adad
+[ info ] ztx.hfxyzq.cn/upload/adad [运行时间：0.019398s][吞吐率：51.55req/s] [内存消耗：2,393.80kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001462s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'adad',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/0 port/36089 token/1994fab4b580936278f4e29cde103792',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000329s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T11:16:14+08:00 ] 36.7.136.208 GET /portal/wx/wxData?code=061VU7Ml08c09k1RhEIl0SzRLl0VU7Mo
+[ info ] ztx.hfxyzq.cn/portal/wx/wxData?code=061VU7Ml08c09k1RhEIl0SzRLl0VU7Mo [运行时间：0.222381s][吞吐率：4.50req/s] [内存消耗：2,323.16kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001416s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'wxData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061VU7Ml08c09k1RhEIl0SzRLl0VU7Mo',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000329s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->wxData[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T11:16:14+08:00 ] 36.7.136.208 GET /portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/infoAdd?nickname=%E5%89%8D%E5%B8%8509&avatar=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ%2F132&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.026409s][吞吐率：37.87req/s] [内存消耗：3,769.70kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001384s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'infoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '前帅09',
+  'avatar' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKgyMxia5HPxMMhz8khT79bL6Olfvib9edupUvKgYgkicxyia5aySG0pNJQAb41XXhdBVygXAgiboOyicvQ/132',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000325s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->infoAdd[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:16:15+08:00 ] 36.7.136.208 GET /portal/wx/category
+[ info ] ztx.hfxyzq.cn/portal/wx/category [运行时间：0.029307s][吞吐率：34.12req/s] [内存消耗：3,775.34kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001633s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000342s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->category[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_category` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_category` [ RunTime:0.000145s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:16:15+08:00 ] 36.7.136.208 GET /portal/wx/banner?bid=1
+[ info ] ztx.hfxyzq.cn/portal/wx/banner?bid=1 [运行时间：0.038218s][吞吐率：26.17req/s] [内存消耗：3,794.90kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001401s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'banner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'bid' => '1',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000341s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->banner[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_banner` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_banner` WHERE  `bid` = 1 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:16:15+08:00 ] 36.7.136.208 GET /portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/activeCategory?cid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.045180s][吞吐率：22.13req/s] [内存消耗：3,819.27kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001412s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'activeCategory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000354s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->activeCategory[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT a.pid,a.plove,a.pprice,a.pwork,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pcategory ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2018-08-16T11:16:15+08:00 ] 36.7.136.208 GET /upload/%E5%95%8A%E5%95%8A%E5%95%8A%E5%95%8A
+[ info ] ztx.hfxyzq.cn/upload/%E5%95%8A%E5%95%8A%E5%95%8A%E5%95%8A [运行时间：0.019565s][吞吐率：51.11req/s] [内存消耗：2,393.70kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001478s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => '啊啊啊啊',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/6 port/36089 token/1994fab4b580936278f4e29cde103792',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000325s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T11:16:22+08:00 ] 36.7.136.208 GET /portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.028137s][吞吐率：35.54req/s] [内存消耗：3,803.98kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001374s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://servicewechat.com/wxbc9f185b34f2dc64/devtools/page-frame.html',
+  'x-real-ip' => '36.7.136.208',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1808101 MicroMessenger/6.5.7 Language/zh_CN webview/ token/1994fab4b580936278f4e29cde103792',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000316s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detail[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT a.pid,a.atime,a.alocation,a.abeizhu,a.starttime,a.endtime,a.zanzhu,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000180s ]
+---------------------------------------------------------------
+[ 2018-08-16T14:12:33+08:00 ] 220.248.243.42 GET /portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.029651s][吞吐率：33.73req/s] [内存消耗：3,802.63kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001559s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'postman-token' => '48aa4503-ced3-4c9d-8b8f-2be363a1f82e',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000381s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detail[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT a.pid,a.atime,a.alocation,a.abeizhu,a.starttime,a.endtime,a.zanzhu,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2018-08-16T14:13:47+08:00 ] 220.248.243.42 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.020841s][吞吐率：47.98req/s] [内存消耗：2,528.26kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001531s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000359s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:13:50+08:00 ] 220.248.243.42 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.019842s][吞吐率：50.40req/s] [内存消耗：2,528.24kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001407s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000388s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:13:53+08:00 ] 220.248.243.42 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.020862s][吞吐率：47.93req/s] [内存消耗：2,528.26kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001426s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '220.248.243.42',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000364s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:14:43+08:00 ] 36.7.87.91 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.021007s][吞吐率：47.60req/s] [内存消耗：2,528.23kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001580s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000392s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:14:45+08:00 ] 36.7.87.91 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.022152s][吞吐率：45.14req/s] [内存消耗：2,528.23kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001644s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000374s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:18:29+08:00 ] 36.7.87.91 GET /portal/wx/detai
+[ info ] ztx.hfxyzq.cn/portal/wx/detai [运行时间：0.022291s][吞吐率：44.86req/s] [内存消耗：2,528.20kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001571s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000385s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T14:19:29+08:00 ] 36.7.87.91 GET /portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c
+[ info ] ztx.hfxyzq.cn/portal/wx/detail?pid=1&openid=o0pzM4l6jk_vD2YLlz7JJIMreD9c [运行时间：0.030747s][吞吐率：32.52req/s] [内存消耗：3,801.21kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001591s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wx',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '36.7.87.91',
+  'connection' => 'close',
+  'user-agent' => 'Apache-HttpClient/4.5.5 (Java/1.8.0_171)',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'openid' => 'o0pzM4l6jk_vD2YLlz7JJIMreD9c',
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000371s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ RUN ] app\portal\controller\WxController->detail[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/WxController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_custom` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_custom` WHERE  `wx_openid` = 'o0pzM4l6jk_vD2YLlz7JJIMreD9c' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT a.pid,a.atime,a.alocation,a.abeizhu,a.starttime,a.endtime,a.zanzhu,a.pname,a.ptitle,a.pimg,a.pdetail,a.pextend,b.laid,c.opid FROM (SELECT * from ztx_active where pid ='1') a LEFT JOIN (select * from ztx_love WHERE luid='90') b on b.laid = a.pid LEFT JOIN (SELECT * FROM ztx_order where ouid ='90') c on c.opid =a.pid GROUP BY a.pid; [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-08-16T14:35:14+08:00 ] 46.101.147.210 GET /errpage/400.html
+[ info ] ztx.hfxyzq.cn/errpage/400.html [运行时间：0.019201s][吞吐率：52.08req/s] [内存消耗：2,391.22kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001441s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'errpage',
+    1 => '400',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '46.101.147.210',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000347s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-16T16:14:55+08:00 ] 64.74.215.1 GET /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.088324s][吞吐率：11.32req/s] [内存消耗：5,350.00kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001465s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '64.74.215.1',
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'en-US',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000345s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000204s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.004403s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.002421s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002342s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.002103s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.002619s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.002298s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.002217s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.003201s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1534407295 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-08-16T16:15:00+08:00 ] 64.74.215.1 POST /user/index/islogin.html
+[ info ] ztx.hfxyzq.cn/user/index/islogin.html [运行时间：0.031145s][吞吐率：32.11req/s] [内存消耗：3,796.13kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001914s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'referer' => 'https://ztx.hfxyzq.cn/',
+  'cookie' => 'PHPSESSID=gs6ljvtr47a9q108a45dob9ak7; thinkphp_show_page_trace=0|0',
+  'x-real-ip' => '64.74.215.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000382s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/user/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000235s ]
+[ info ] [ RUN ] app\user\controller\IndexController->isLogin[ /www/web/ztx_hfxyzq_cn/public_html/app/user/controller/IndexController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-08-16T18:58:47+08:00 ] 101.132.97.53 GET /
+[ info ] ztx.hfxyzq.cn/ [运行时间：0.089356s][吞吐率：11.19req/s] [内存消耗：5,349.64kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001549s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ztx.hfxyzq.cn',
+  'x-real-ip' => '101.132.97.53',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000361s ]
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/web/ztx_hfxyzq_cn/public_html/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000249s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/web/ztx_hfxyzq_cn/public_html/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;port=3306;dbname=ztx;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_option` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `ztx_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme_file` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.003443s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.002576s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/Category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.002729s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.002880s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.002525s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.003549s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.004082s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_theme` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] UPDATE `ztx_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.002895s ]
+[ sql ] [ SQL ] SELECT `more` FROM `ztx_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ztx_nav` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_nav_menu` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_nav_menu` WHERE  `nav_id` = 1  AND `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_slide` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ztx_slide` WHERE  `id` = 1  AND `status` = 1  AND `delete_time` = 0 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_portal_post` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT post.*,min(category_post.category_id) as category_id FROM `ztx_portal_post` `post` INNER JOIN `ztx_portal_category_post` `category_post` ON `post`.`id`=`category_post`.`post_id` WHERE  ( `post`.`published_time` >  '0' AND `post`.`published_time` < 1534417127 )  AND `post`.`post_status` = 1  AND `post`.`post_type` = 1  AND `post`.`delete_time` = 0  AND `category_post`.`category_id` = '1' GROUP BY `post`.`id` ORDER BY `post`.`published_time` DESC LIMIT 4 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ztx_link` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `ztx_link` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000167s ]

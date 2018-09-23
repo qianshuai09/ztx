@@ -1,0 +1,48 @@
+<!--pages/components/joinus/joinus.wxml-->
+<view class='page-form clearfix'>
+
+      <view class='form-box'>
+            <view class='form-left'>姓名</view>
+                 <input bindinput='nameInput' class='form-right'></input>
+      </view>
+
+        <view class='form-box'>
+            <view class='form-left'>支付宝号</view>
+                 <input class='form-right'  bindinput='idInput'></input>
+      </view>
+
+        <view class='form-box'>
+            <view class='form-left'>手机号</view>
+                 <input class='form-right'  bindinput='phoneInput'></input>
+      </view>
+
+      <view class='form-box'>
+            <view class='form-left'>QQ号(选填)</view>
+                 <input class='form-right'  bindinput='cardInput'></input>
+      </view>
+
+      <view class='form-box'>
+            <view class='form-left'>微信号(选填)</view>
+                 <input class='form-right'  bindinput='weixinInput'></input>
+      </view>
+
+        <view class='form-box'>
+            <view class='form-left'>学校</view>
+                 <input class='form-right'  bindinput='schoolInput'></input>
+      </view>
+
+      
+
+
+      <view class='img-upload'>
+         
+      <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{idCardF}}' data-id='idCardF' >
+           </image>
+      </view>
+      <view class='img-upload'>
+          <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{idCardB}}' data-id='idCardB' ></image>
+      </view>
+
+      <view class='submission'><button bindtap='submitInfo'>提交</button></view>
+
+</view>

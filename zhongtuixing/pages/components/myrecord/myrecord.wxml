@@ -1,0 +1,50 @@
+<!--pages/components/myrecord/myrecord.wxml-->
+<!--tabbar-->
+    <view class='tabbar' >
+    <!--  <view data-num="1" class="row-3  {{_num==1?'active':''}}" bindtap="menuClick">社团赞助</view>
+       <view data-num="2" class="row-3 {{_num==2?'active':''}}" bindtap="menuClick">实习工作</view>
+        <view data-num="3" class="row-3 {{_num==3?'active':''}}" bindtap="menuClick">公益活动</view>-->
+    <view wx:for="{{list}}" wx:key="list" class="row-3 {{index==idx?'_left':'active'}}" bindtap='goIndex' data-index="{{index}}">{{item.num}}</view>
+
+
+        <!-- <scroll-view scroll-x  class='typeNavView'>
+
+       <view class="navItem {{nowPage == index? 'navItem-active':'' }} " wx:for='{{typeArr}}' id='{{index}}'             bindtap='navBarTap'>{{item.cname}}
+  
+       </view>
+      </scroll-view> -->
+</view>
+
+<!--list-->
+<navigator wx:if="{{param===0}}"  wx:for="{{detailOne}}" hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image data-pid='{{item.pid}}' data-oid='{{item.oid}}' bindtap='imgTap' src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+<view class='fabulous'> <text  class='iconfont icon-remove-1-copy' data-pid="{{item.pid}}"  bindtap='deleteZan'> 删除</text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price'>￥{{item.pprice}}</view>
+       <view class='apply'><button>已申请</button></view>
+</view>
+</navigator>
+
+<navigator wx:if="{{param===1}}" wx:for="{{detailTwo}}"  hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image data-muid="{{item.mu_id}}"bindtap='workTapImg' src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+<view class='fabulous'> <text  class='iconfont icon-remove-1-copy' data-muid="{{item.mu_id}}"  bindtap='deleteWork'> 删除</text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price'>{{item.mu_name}}</view>
+       <view class='apply'><button>已申请</button></view>
+</view>
+</navigator>
+
+<navigator wx:if="{{param===2}}" wx:for="{{detailThree}}"  hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image data-pid='{{item.pid}}'  data-oid='{{item.oid}}'  bindtap='activeImgTap' src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+<view class='fabulous'> <text  class='iconfont icon-remove-1-copy' data-pid="{{item.pid}}"  bindtap='deleteZan'> 删除</text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price' style='color:#4E8E9B'>更多详情></view>
+       <view class='apply'><button>已申请</button></view>
+</view>
+</navigator>  

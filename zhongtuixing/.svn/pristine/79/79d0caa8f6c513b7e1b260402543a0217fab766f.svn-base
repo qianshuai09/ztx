@@ -1,0 +1,44 @@
+<!--pages/components/work/work.wxml-->
+
+<view class='content-box'>
+<view class='company-name'>{{data.pname}}</view>
+<view class='content'>
+  {{data.pdetail}}
+</view>
+<view class="img-box"><image  src='https://ztx.hfxyzq.cn/upload/{{data.pimg}}' mode="widthFix"></image></view>
+</view>
+
+<!--apply-box-->
+<view  class='apply-box clearfix'>
+      <view class='work-name'>{{data.mname}}</view>
+      <view class='work-price-address-box'>
+      <view class='work-price'>{{data.msurro}}</view>
+       <view class='work-address'>{{data.maddr}} <text>丨{{data.mnature}}丨{{data.mrecord}}                 <swiper-item></swiper-item></text></view>
+      </view>
+      <view class='work-duty'>
+      <text>岗位职责:</text>
+       {{data.mduty}}
+      </view>
+      <view class='work-time-box'>
+    <view class='work-time'>工作时间</view>
+    <view class='work-time-1'>{{data.mdatetime}}</view>
+      <view class='apply-button'>
+
+     <button data-mid='{{data.mid}}' wx:if='{{data.mu_mid==null}}' bindtap="applyJob" class='apply'>{{btnText_apply}}</button>
+      <button data-mid='{{data.mid}}' wx:elif='{{data.mu_mid!=null}}' bindtap="applyJob" class='apply'>已申请</button>
+
+      </view>
+      </view>
+      
+    </view>
+
+<view class='comment-box clearfix'>
+<view class='comment'>系统评价：</view>
+<view class='comment-box-text'>{{comment.mu_back}}</view>
+
+<view class='comment-img-box' wx:for="{{imgs}}">
+      <image src='{{item.url}}' mode="widthFix"></image>
+</view>
+</view>
+
+

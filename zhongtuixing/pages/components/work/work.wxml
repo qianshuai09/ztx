@@ -1,0 +1,39 @@
+<!--pages/components/work/work.wxml-->
+
+<view class='content-box'>
+<view class='company-name'>{{active[0].pname}}</view>
+<view class='content'>
+  {{active[0].pdetail}}
+</view>
+<view class="img-box"><image  src='https://ztx.hfxyzq.cn/upload/{{active[0].pimg}}' mode="widthFix"></image></view>
+</view>
+
+<!--apply-box-->
+<view wx:for='{{job}}' class='apply-box clearfix'>
+      <view class='work-name'>{{item.mname}}</view>
+      <view class='work-price-address-box'>
+      <view class='work-price'>{{item.msurro}}</view>
+       <view class='work-address'>{{item.maddr}} <text>丨{{item.mnature}}丨{{item.mrecord}}                 <swiper-item></swiper-item></text></view>
+      </view>
+      <view class='work-duty'>
+      <text>岗位职责:</text>
+       {{item.mduty}}
+      </view>
+      <view class='work-time-box'>
+    <view class='work-time'>工作时间</view>
+    <view class='work-time-1'>{{item.mdatetime}}</view>
+      <view class='apply-button'>
+
+     <button data-mid='{{item.mid}}' wx:if='{{item.mu_mid==null}}' bindtap="applyJob" class='apply'>{{btnText_apply}}</button>
+      <button data-mid='{{item.mid}}' wx:elif='{{item.mu_mid!=null}}' bindtap="applyJob" class='apply'>已申请</button>
+
+      </view>
+      </view>
+      
+    </view>
+
+       <view class='button-apply'>
+      <button wx:if='{{laid==null}}' bindtap="loveTap"  class='love'>{{btnText_love}}</button>
+      <button wx:if='{{laid!=null}}' bindtap="loveTap"  class='love'>已喜欢</button>
+      </view>
+

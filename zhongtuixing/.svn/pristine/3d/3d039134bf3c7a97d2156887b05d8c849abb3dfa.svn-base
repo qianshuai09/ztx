@@ -1,0 +1,35 @@
+<!--pages/components/introduce/introduce.wxml-->
+<view class='content-box'>
+<view class='company-name'>{{about.aname}}</view>
+<view class='content'>
+{{about.adetail}}
+</view>
+<view class="img-box"><image  src='{{about.aimg}}' mode="widthFix"></image></view>
+</view>
+
+<view class='team-introduce'>
+<view class='team-introduce-team'>TEAM</view>
+<text>团队介绍</text>
+</view>
+
+
+
+
+<view class='idx-content'>
+    <view class='idx-swiper'>
+        <view   class='idx-cswp {{item.swpClass}}' 
+                wx:for="{{swiperList}}" wx:key=""
+                bindtap="swpBtn"
+                data-index="{{index}}">
+            <image src='{{item.imgsrc}}' mode='widthFix'></image>
+            <view class='swp-title' hidden="{{item.swpClass!=='swp-center'}}">
+                <view class='swp-btime'>{{item.name}}</view>
+                <view class='swp-bname'>{{item.introduce}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+

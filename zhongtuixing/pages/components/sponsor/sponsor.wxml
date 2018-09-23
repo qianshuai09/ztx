@@ -1,0 +1,27 @@
+<view wx:for="{{detail}}">
+<view class="img-box"><image  src='{{img}}' mode="widthFix"></image></view>
+<view class='content'>
+      {{item.pdetail}}
+</view>
+<view class='button-apply'>
+
+
+
+<button wx:if='{{item.laid==null}}' bindtap="loveTap"  class='love'>{{btnText_love}}</button>
+
+<button wx:elif='{{item.laid!=null}}' bindtap="loveTap"  class='love'>已喜欢</button>
+
+
+<button wx:if='{{item.opid==null}}' bindtap="applyTap" class='apply'>{{btnText_apply}}</button>
+
+<button wx:elif='{{item.opid!=null}}' class='apply'>已申请</button>
+
+ 
+</view>
+<view class='content-foot-title'>
+赞助方：{{item.zanzhu}}
+</view>
+<view class='content-foot-time'>
+赞助时间：{{item.starttime}} 至 {{item.endtime}}
+</view>
+</view>

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/components/mine/mine",
+    "pages/components/sponsor/sponsor",
+    "pages/components/work/work",
+        "pages/components/mywork/mywork",
+    "pages/components/activity/activity",
+        "pages/components/sponsorcom/sponsorcom",
+        "pages/components/myworkcom/myworkcom",
+        "pages/components/activitycom/activitycom",
+    "pages/components/myrecord/myrecord",
+    "pages/components/myattention/myattention",
+    "pages/components/introduce/introduce",
+    "pages/components/joinus/joinus",
+    "pages/components/authentication/authentication"
+
+  ],
+  "window": {
+    "backgroundColor": "#f4f4f4",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "众推行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#D9424E",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/shouye.png",
+        "selectedIconPath": "image/shouye-1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/components/mine/mine",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine-1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

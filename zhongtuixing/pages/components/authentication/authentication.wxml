@@ -1,0 +1,44 @@
+<!--pages/components/authentication/authentication.wxml-->
+<view class='page-form clearfix'>
+
+      <view class='form-box'>
+            <view class='form-left'>真实姓名</view>
+                 <input class='form-right'  bindinput='nameInput' placeholder='请输入真实姓名'></input>
+      </view>
+
+       <view class='form-box'>
+            <view class='form-left'>手机号</view>
+                 <input class='form-right'  bindinput='phoneInput' placeholder='请输入手机号'></input>
+      </view>
+
+
+        <view class='form-box'>
+            <view class='form-left'>身份证号</view>
+                 <input class='form-right'  bindinput='idInput' placeholder='请输入身份证证号'></input>
+      </view>
+
+    
+        <view class='form-box'>
+            <view class='form-left'>学生证</view>
+                 <input class='form-right' bindinput='cardInput' placeholder='请输入学生证证号'></input>
+      </view>
+
+
+        <view class='img-upload'>
+         
+      <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{idCard_zheng}}' data-id='idCard_zheng' >
+           </image>
+      </view>
+      <view class='img-upload'>
+          <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{idCard_fan}}' data-id='idCard_fan' ></image>
+      </view>
+          <view class='img-upload'>
+          <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{xuesheng}}' data-id='xuesheng' ></image>
+      </view>
+          <view class='img-upload'>
+          <image class='iconfont' style='height:6rem' bindtap='imgUpload'                src='{{shetuan}}' data-id='shetuan' ></image>
+      </view>
+
+      <view class='submission'><button bindtap='submitInfo'>提交</button></view>
+
+</view>

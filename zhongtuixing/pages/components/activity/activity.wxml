@@ -1,0 +1,34 @@
+<!--pages/components/activity/activity.wxml-->
+<view wx:for="{{detail}}">
+<view class='content-box clearfix'>
+<view class='company-name'>{{item.pname}}</view>
+<view class='content'>
+      {{item.ptitle}}
+</view>
+<view wx:for='{{pimgs}}'>
+<view class="img-box"><image  src='{{item.url}}' mode="widthFix"></image></view>
+</view>
+
+<view class='work-time'>活动时间：</view>
+<view class='work-time-1'>{{item.atime}}</view>
+<view class='work-time'>活动地点：</view>
+<view class='work-time-1'>{{item.alocation}}</view>
+<view class='work-`time'>备注：</view>
+<view class='work-time-1'>{{item.abeizhu}}</view>
+
+</view>
+<view class='button-apply'>
+
+<button wx:if='{{item.laid==null}}' bindtap="loveTap"  class='love'>{{btnText_love}}</button>
+
+<button wx:elif='{{item.laid!=null}}' bindtap="loveTap"  class='love'>已喜欢</button>
+
+
+<button wx:if='{{item.opid==null}}' bindtap="applyTap" class='apply'>{{btnText_apply}}</button>
+
+<button wx:elif='{{item.opid!=null}}' class='apply'>已申请</button>
+
+ 
+</view>
+</view>
+

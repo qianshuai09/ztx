@@ -1,0 +1,75 @@
+<!--banner-->
+
+
+<view hidden="{{actionSheetHidden}}" class='bg-black'>
+    <view class='shouquan'>
+    <view class='shouquan-weixin'>微信授权</view>
+    <view class='shouquan-biaoti'>小程序将获取以下权限：</view>
+    <view class='shouquan-neirong'>（如果未授权，可能无法正常使用该小程序）</view>
+        <view class='shouquan-detail'>·   获取你的公开信息（昵称、头像等）</view>
+    <button id='shouquan' open-type="getUserInfo" lang="zh_CN" bindtap="actionSheetTap"  bindgetuserinfo="onGotUserInfo">授权</button>
+    </view>
+
+</view>
+
+
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>
+
+<!--tabbar-->
+    <view class='tabbar' >
+    <!--  <view data-num="1" class="row-3  {{_num==1?'active':''}}" bindtap="menuClick">社团赞助</view>
+       <view data-num="2" class="row-3 {{_num==2?'active':''}}" bindtap="menuClick">实习工作</view>
+        <view data-num="3" class="row-3 {{_num==3?'active':''}}" bindtap="menuClick">公益活动</view>-->
+    <view wx:for="{{list}}" wx:key="list" class="row-3 {{index==idx?'_left':'active'}}" bindtap='goIndex' data-index="{{index}}">{{item.num}}</view>
+
+
+        <!-- <scroll-view scroll-x  class='typeNavView'>
+
+       <view class="navItem {{nowPage == index? 'navItem-active':'' }} " wx:for='{{typeArr}}' id='{{index}}'             bindtap='navBarTap'>{{item.cname}}
+  
+       </view>
+      </scroll-view> -->
+</view>
+
+<!--list-->
+<navigator wx:if="{{param===0}}"  wx:for="{{detailOne}}"url="../components/sponsor/sponsor?pid={{item.pid}}" hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+  <view class='fabulous'>{{item.plove}} <text  class='iconfont icon-icon4'></text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price'>￥{{item.pprice}}</view>
+       <view wx:if='{{item.opid==null}}'class='apply'>{{btnText_apply}}</view>
+       <view wx:elif='{{item.opid!=null}}' class='apply'  >已申请</view>
+</view>
+</navigator>
+
+<navigator wx:if="{{param===1}}" wx:for="{{detailTwo}}" url="../components/work/work?pid={{item.pid}}" hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+  <view class='fabulous'>{{item.plove}} <text  class='iconfont icon-icon4'></text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price'>{{item.pwork}}</view>
+        <!--<view wx:if='{{item.opid==null}}'class='apply'>{{btnText_apply}}</view>
+       <view wx:elif='{{item.opid!=null}}' class='apply'  >已申请</view>--> 
+</view>
+</navigator>
+
+<navigator wx:if="{{param===2}}" wx:for="{{detailThree}}" url="../components/activity/activity?pid={{item.pid}}" hover-class="navigator-hover">
+<view class='list-box' >
+  <view class='list-box-img'><image src='https://ztx.hfxyzq.cn/upload/{{item.pimg}}'></image></view>
+  <view class='list-title'>{{item.pname}}</view>
+  <view class='fabulous'>{{item.plove}} <text  class='iconfont icon-icon4'></text></view>
+    <view class='list-title-detail'>{{item.ptitle}}</view>
+       <view class='list-price' style='color:#4E8E9B'>更多详情></view>
+         <view wx:if='{{item.opid==null}}'class='apply'>{{btnText_apply}}</view>
+       <view wx:elif='{{item.opid!=null}}' class='apply'  >已申请</view>
+</view>
+</navigator>

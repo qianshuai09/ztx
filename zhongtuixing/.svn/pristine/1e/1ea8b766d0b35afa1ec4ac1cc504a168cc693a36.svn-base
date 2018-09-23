@@ -1,0 +1,65 @@
+
+<view class="mine-box clearfix">
+    <view class='mine-box-top'></view>
+     <view class='mine-box-bottom'>
+      <view class='user-img'><image src='{{user.avatarUrl}}'></image></view>
+      <view class='user-name'>{{user.nickName}}</view> 
+     </view>
+</view>
+
+<view class='list-box clearfix'>
+
+<navigator url="../myrecord/myrecord" hover-class="navigator-hover">
+    <view class='list'>
+     <text  class='iconfont icon-jiludanzilishijilu tubiao'></text>我的记录
+      <text  class='iconfont icon-youjiantou tubiao1'></text>
+    </view>
+    </navigator>
+
+<navigator url="../myattention/myattention" hover-class="navigator-hover">
+    <view class='list'>
+     <text  class='iconfont icon-guanzhu tubiao'></text>我的关注
+      <text  class='iconfont icon-youjiantou tubiao1'></text>
+    </view>
+        </navigator>
+        <navigator bindtap='realName' hover-class="navigator-hover">
+    <view class='list'>
+     <text  class='iconfont icon-wode tubiao'></text>实名认证
+      <text  class='renzheng'>{{idstatus}}</text>
+      <text  class='iconfont icon-youjiantou tubiao1-1'></text>
+    </view>
+        </navigator>
+
+    <navigator url="../introduce/introduce" hover-class="navigator-hover">
+    <view class='list'>
+     <text  class='iconfont icon-tuandui tubiao'></text>团队介绍
+      <text  class='iconfont icon-youjiantou tubiao1'></text>
+    </view>
+        </navigator>
+
+    <navigator bindtap='realJoin' hover-class="navigator-hover">
+    <view class='list'>
+     <text  class='iconfont icon-jiarugedan tubiao'></text>加入我们
+     <text  class='renzheng'>{{joinstatus}}</text>
+      <text  class='iconfont icon-youjiantou tubiao1-1'></text>
+    </view>
+        </navigator>
+
+
+    <view class='list'  bindtap="actionSheetTap">
+     <text  class='iconfont icon-lianxi tubiao'></text>联系我们
+      <text  class='iconfont icon-youjiantou tubiao1'></text>
+    </view>
+    
+</view>
+
+
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+      
+    </block>
+      <button id="contact" open-type="contact" >进入客服会话</button>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

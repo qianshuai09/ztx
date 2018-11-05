@@ -1,0 +1,24 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/image/more/loading.gif"></image>
+  </view>
+  <block wx:else>
+
+    <text class='title'>众实践小程序</text>
+    
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="logo" src="/image/more/logo.png"></image>
+        <image class="wave" src="/image/more/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/image/more/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+         <!-- <image src="/image/more/confirm-word1.png"></image> -->
+         <text class="smalltitle">让天下没有难拉的赞助！</text>
+        <button  class="confirm-btn"  open-type="getUserInfo" bindgetuserinfo="login">进入浏览</button>
+ 
+      </view>
+    </view>
+  </block>
+</view>
